@@ -15,11 +15,11 @@
 <meta name="keywords" content="remind">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速維修 Hexo page 的方式">
-<meta property="og:url" content="http://yoursite.com/2017/09/13/My-First-BLOG-Test/index.html">
+<meta property="og:url" content="https://josh-zh-chen.github.io/2017/09/13/My-First-BLOG-Test/index.html">
 <meta property="og:site_name" content="Josh&#39;s Reminds">
 <meta property="og:description" content="Quick modificationFind markdown file (.md) of hexo post1hexo/blog/source/_posts/xxx.md 使用 markdown editor (Remarkable or …) 進行修改xxx.md Run server1$ hexo server More info: Server Verify result開啟瀏覽器 htt">
-<meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2017-09-14T10:32:05.579Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2017-09-15T02:31:12.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速維修 Hexo page 的方式">
 <meta name="twitter:description" content="Quick modificationFind markdown file (.md) of hexo post1hexo/blog/source/_posts/xxx.md 使用 markdown editor (Remarkable or …) 進行修改xxx.md Run server1$ hexo server More info: Server Verify result開啟瀏覽器 htt">
@@ -59,10 +59,32 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
+
+
 
 
 <header id="allheader" class="site-header" role="banner" 
-   >
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -81,15 +103,15 @@
             <div class="clearfix sf-menu">
               <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首頁</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">彙整</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分類</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">標籤</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">關于</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
                     
               </ul>
             </div>
@@ -122,10 +144,13 @@
     <div class="article-meta">
       
 	<a href="/2017/09/13/My-First-BLOG-Test/" class="article-date">
-	  <time datetime="2017-09-13T06:44:03.000Z" itemprop="datePublished">九月 13, 2017</time>
+	  <time datetime="2017-09-13T06:44:03.000Z" itemprop="datePublished">September 13, 2017</time>
 	</a>
 
-       
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+ 
       
 	<span id="busuanzi_container_page_pv">
 	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
@@ -148,6 +173,9 @@
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+
       
   <span class="ico-tags"></span>
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/remind/">remind</a></li></ul>
@@ -185,6 +213,15 @@
     
 <nav id="article-nav">
   
+    <a href="/2017/09/14/如何在ubuntu16-04安裝新酷音/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          如何在英文版ubuntu16.04安裝新酷音
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/09/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
@@ -200,7 +237,7 @@
 
   <aside id="sidebar">
     <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目錄</strong>
+    <strong class="toc-title">Contents</strong>
     
       <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-modification"><span class="nav-number">1.</span> <span class="nav-text">Quick modification</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Find-markdown-file-md-of-hexo-post"><span class="nav-number">1.1.</span> <span class="nav-text">Find markdown file (.md) of hexo post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Verify-result"><span class="nav-number">1.3.</span> <span class="nav-text">Verify result</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.4.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.5.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
     
@@ -256,6 +293,9 @@
 
     <!-- headerblur min height -->
     
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
+    
     
 </script>
     
@@ -303,6 +343,19 @@
 <script src="/js/bootstrap.js"></script>
 <script src="/js/main.js"></script>
 
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-106558718-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
 
 
 
